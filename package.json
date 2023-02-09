@@ -1,0 +1,25 @@
+{
+  "name": "mi_sitio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AxelAraujoLynch/mi_sitio.git"
+  },
+  "author": "Axel Araujo Lynch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AxelAraujoLynch/mi_sitio/issues"
+  },
+  "homepage": "https://github.com/AxelAraujoLynch/mi_sitio#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
