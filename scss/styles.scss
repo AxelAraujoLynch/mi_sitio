@@ -1,6 +1,7 @@
 @import "./_variables";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 @import "./footer";
+@import "./header";
 
 * {
   margin: 0;
@@ -16,72 +17,6 @@ body {
 
   button {
     border-radius: 0% !important;
-  }
-
-  header {
-
-    height: 15vh;
-
-    nav {
-      .navbar-nav .nav-link.active,
-      .navbar-nav .show>.nav-link {
-        color: brown;
-      }
-      
-      .nav {
-        padding-top: var(--bs-navbar-brand-padding-y);
-        padding-bottom: var(--bs-navbar-brand-padding-y);
-        margin-right: var(--bs-navbar-brand-margin-end);
-        font-size: 2rem;
-        color: $color-especial;
-        text-decoration: none;
-        white-space: nowrap;
-      }
-
-      .nav-link {
-        transition: all 0.2s;
-        font-size: 1.2rem !important;
-        font-weight: 900;
-        letter-spacing: 4px;
-        position: relative !important;
-        color: $color-especial;
-      }
-
-      .nav-link:focus {
-        color: rgb(165, 135, 115);
-      }
-
-      .nav-link:hover {
-        color: $color-especial;
-      }
-
-      .nav-link::after {
-        content: '';
-        opacity: 0;
-        transition: all 0.2s;
-        height: 2px;
-        width: 100%;
-        background-color: $color-especial;
-        position: absolute !important;
-        bottom: 0;
-        left: 0;
-      }
-
-      .nav-link:hover::after {
-        opacity: 1;
-      }
-
-
-      a {
-        font-weight: 500 !important;
-        font-size: 1.3rem !important;
-        color: white !important;
-
-        &:hover {
-          background-color: $color-especial;
-        }
-      }
-    }
   }
 
 

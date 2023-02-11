@@ -65,6 +65,59 @@
   color: rgb(129, 131, 126) !important;
 }
 
+header {
+  height: 15vh;
+}
+header nav .navbar-nav .nav-link.active,
+header nav .navbar-nav .show > .nav-link {
+  color: brown;
+}
+header nav .nav {
+  padding-top: var(--bs-navbar-brand-padding-y);
+  padding-bottom: var(--bs-navbar-brand-padding-y);
+  margin-right: var(--bs-navbar-brand-margin-end);
+  font-size: 2rem;
+  color: rgb(129, 131, 126);
+  text-decoration: none;
+  white-space: nowrap;
+}
+header nav .nav-link {
+  transition: all 0.2s;
+  font-size: 1.2rem !important;
+  font-weight: 900;
+  letter-spacing: 4px;
+  position: relative !important;
+  color: rgb(129, 131, 126);
+}
+header nav .nav-link:focus {
+  color: rgb(165, 135, 115);
+}
+header nav .nav-link:hover {
+  color: rgb(129, 131, 126);
+}
+header nav .nav-link::after {
+  content: "";
+  opacity: 0;
+  transition: all 0.2s;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(129, 131, 126);
+  position: absolute !important;
+  bottom: 0;
+  left: 0;
+}
+header nav .nav-link:hover::after {
+  opacity: 1;
+}
+header nav a {
+  font-weight: 500 !important;
+  font-size: 1.3rem !important;
+  color: white !important;
+}
+header nav a:hover {
+  background-color: rgb(129, 131, 126);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -78,58 +131,6 @@ body {
 }
 body button {
   border-radius: 0% !important;
-}
-body header {
-  height: 15vh;
-}
-body header nav .navbar-nav .nav-link.active,
-body header nav .navbar-nav .show > .nav-link {
-  color: brown;
-}
-body header nav .nav {
-  padding-top: var(--bs-navbar-brand-padding-y);
-  padding-bottom: var(--bs-navbar-brand-padding-y);
-  margin-right: var(--bs-navbar-brand-margin-end);
-  font-size: 2rem;
-  color: rgb(129, 131, 126);
-  text-decoration: none;
-  white-space: nowrap;
-}
-body header nav .nav-link {
-  transition: all 0.2s;
-  font-size: 1.2rem !important;
-  font-weight: 900;
-  letter-spacing: 4px;
-  position: relative !important;
-  color: rgb(129, 131, 126);
-}
-body header nav .nav-link:focus {
-  color: rgb(165, 135, 115);
-}
-body header nav .nav-link:hover {
-  color: rgb(129, 131, 126);
-}
-body header nav .nav-link::after {
-  content: "";
-  opacity: 0;
-  transition: all 0.2s;
-  height: 2px;
-  width: 100%;
-  background-color: rgb(129, 131, 126);
-  position: absolute !important;
-  bottom: 0;
-  left: 0;
-}
-body header nav .nav-link:hover::after {
-  opacity: 1;
-}
-body header nav a {
-  font-weight: 500 !important;
-  font-size: 1.3rem !important;
-  color: white !important;
-}
-body header nav a:hover {
-  background-color: rgb(129, 131, 126);
 }
 body main {
   height: 155vh;
