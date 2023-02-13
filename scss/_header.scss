@@ -28,7 +28,7 @@ header {
       }
 
       .nav-link:focus {
-        color: rgb(165, 135, 115);
+        color: rgb(165, 135, 115) !important;
       }
 
       .nav-link:hover {
@@ -57,9 +57,10 @@ header {
         font-size: 1.3rem !important;
         color: white !important;
 
-        &:hover {
-          background-color: $color-especial;
-        }
+        // &:hover {
+        //   background-color: $color-especial;
+        // }
       }
+      
     }
   }

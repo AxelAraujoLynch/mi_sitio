@@ -90,7 +90,7 @@ header nav .nav-link {
   color: rgb(129, 131, 126);
 }
 header nav .nav-link:focus {
-  color: rgb(165, 135, 115);
+  color: rgb(165, 135, 115) !important;
 }
 header nav .nav-link:hover {
   color: rgb(129, 131, 126);
@@ -114,8 +114,9 @@ header nav a {
   font-size: 1.3rem !important;
   color: white !important;
 }
-header nav a:hover {
-  background-color: rgb(129, 131, 126);
+
+#Main-Music {
+  height: 290vh !important;
 }
 
 * {

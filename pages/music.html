@@ -11,13 +11,14 @@
   <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/styles.css">
+   <link rel="stylesheet" href="../css/styles.css">
+  
 
 </head>
 
 <body>
 
-  <header>
+<header>
 
   <nav class="navbar navbar-expand-lg bg-secondary h-100 bg-black">
       <div class="container-fluid ">
@@ -33,7 +34,7 @@
           <div class="navbar-nav me-5">
 
             <a class="nav-link fw-bold link-light" href="./history.html">History</a>
-            <a class="nav-link fw-bold link-light" href="./music.html">Albums</a>
+            <a class="nav-link fw-bold link-light" href="./music.html">Music</a>
             <a class="nav-link fw-bold link-light" href="./videos.html">Videos</a>
             <a class="nav-link fw-bold link-light " href="./merch.html">Merch</a>
           </div>
@@ -42,66 +43,959 @@
     </nav>
   </header>
 
-  <!-- ----------------------------BARRA PLACEHOLDER---------------------------------------------------- -->
-  <p class="placeholder-wave mb-0 mt-0  bg-black">
+  <!-- ----------------------------BARRA PLACEHOLDER------------------------------------------------------>
+  <p class="placeholder-wave mb-0 mt-0 bg-black">
     <span class="placeholder placeholder-xs col-12"></span>
   </p>
-  <!-- ----------------------------BARRA PLACEHOLDER---------------------------------------------------- -->
+  
+  
+  <main id="Main-Music" class="h-100">
+  
+   <!----------------------container modal / button / modal------------------------------------------------------------>
 
 
-  <main class="container-fluid bg-secondary h-100">
-
-    <div class="container-fluid">
-
-       <div class="row">
-       <div class=" d-flex justify-content-center col-6 bg-warning ">
-
-        <div class="d-flex justify-content-center align-items-center">Minutes to midnight</div>
-        
-        
-
-        <img src="../images/music 9.jpeg" height="200px" width="150px" alt="">
-
-     
-           <div class="d-flex justify-content-center align-items-center">
-            <audio controls src=""></audio>
-           </div>
-
+    <div class="container-fluid bg-black">
+  
+  
+      <div class="row bg-dark">
+        <!------Button modal ---------------->
+        <button type="button"
+          class=" fw-bold btn btn-outline-secondary btn-sm col-6 border border-bottom border-top border-0"
+          data-bs-toggle="modal" data-bs-target="#MoreInfo-One">
+          More info
+        </button>
+  
+       <!------Button modal ---------------->
+        <button type="button"
+          class=" fw-bold btn btn-outline-secondary btn-sm col-6 border border-bottom border-top border-0"
+          data-bs-toggle="modal" data-bs-target="#Song-Lyrics-One">
+          Lyrics
+        </button>
       </div>
-
-
-      <div class="col-6 d-flex justify-content-center bg-danger  ">
-        <img src="../images/music 9.jpeg" height="100px" width="100px" alt="">
-
-
-
+  
+      <div class="row bg-black">
+  
+        <div class=" col-5 mt-4 ms-0 mb-4">
+          <img width="514px" height="300px" src="../images/wp5318429-one-more-light-linkin-park-wallpapers.jpg"
+            alt="collage de la banda">
+        </div>
+  
+        <p
+          class=" fw-bold col-3 h6 d-flex align-items-center justify-content-center text-light text-decoration-underline ">
+          One More Light
+        </p>
+  
+  
+        <div class="d-flex col-4 justify-content-center align-items-center">
+          <button type="button"
+            class="btn btn-outline-secondary btn-sm align-items-center justify-content-center border-3 "
+            data-bs-toggle="modal" data-bs-target="#ListenNow-One">
+            Listen Now
+          </button>
+        </div>
       </div>
+    
+  
+  
+    <!------------------------Modal-Song------------------------------------>
 
-
+    <div class="modal fade" id="ListenNow-One" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header d-flex bg-dark text-secondary">
+            <h1 class="modal-title fs-6 fw-bold " id="staticBackdropLabel"> One More Light - Linkin Park</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+  
+          <div class="modal-body d-flex align-items-center justify-content-center bg-dark">
+  
+            <audio controls muted 
+              src="../assets/Audio/One More Light [Official Music Video] - Linkin Park.mp3">
+  
+            </audio>
+          </div>
+  
+          <div class="modal-footer d-flex justify-content-center bg-dark text-secondary  ">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
       </div>
+    </div>
+  
+   
+    <!------------------------Modal-Lyrics----------------------------------->
+
+    <div class="modal fade" id="Song-Lyrics-One" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header d-flex bg-dark text-secondary">
+            <h1 class="modal-title fs-6 fw-bold " id="staticBackdropLabel"> One More Light - Linkin Park</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+  
+          <div class="modal-body d-flex align-items-center justify-content-center bg-dark">
+            <p class="text-light">
+              Should've stayed, were there signs, I ignored? <br>
+              Can I help you, not to hurt, anymore? <br>
+              We saw brilliance, when the world, was asleep<br>
+              There are things that we can have, but can't keep<br>
+              If they say<br>
+              Who cares if one more light goes out?<br>
+              In a sky of a million stars<br>
+              It flickers, flickers<br>
+              Who cares when someone's time runs out?<br>
+              If a moment is all we are<br>
+              We're quicker, quicker<br>
+              Who cares if one more light goes out?<br>
+              Well I do<br>
+              The reminders pull the floor from your feet<br>
+              In the kitchen, one more chair than you need oh<br>
+              And you're angry, and you should be, it's not fair<br>
+              Just 'cause you can't see it, doesn't mean it, isn't there<br>
+              If they say<br>
+              Who cares if one more light goes out?<br>
+              In a sky of a million stars<br>
+              It flickers, flickers<br>
+              Who cares when someone's time runs out?<br>
+              If a moment is all we are<br>
+              We're quicker, quicker<br>
+              Who cares if one more light goes out?<br>
+              Well I do<br>
+              Who cares if one more light goes out?<br>
+              In a sky of a million stars<br>
+              It flickers, flickers<br>
+              Who cares when someone's time runs out?<br>
+              If a moment is all we are<br>
+              We're quicker, quicker<br>
+              Who cares if one more light goes out?<br>
+              Well I do<br>
+              Well I do<br>
+            </p>
+  
+          </div>
+  
+          <div class="modal-footer d-flex justify-content-center bg-dark text-secondary  ">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!------------------------Modal-description----------------------------------->
+
+    <div class="modal fade" id="MoreInfo-One" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-dark text-light">
+            <h1 class="modal-title fs-5 fw-bold  text-secondary" id="staticBackdropLabel">Description</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-black">
+  
+            <div class="d-flex align-items-center justify-content-center">
+              <p class="text-light">
+                Released: 3 de octubre de 2017 <br>
+                Recorded: 2016 <br>
+                Genre: Rock electrónico , Balada <br>
+                Length: 4:15 <br>
+                Album: One More Light <br>
+                Songwriter(s): Mike Shinoda, Eg White <br>
+                Producer(s): Mike Shinoda, Brad Delson, RAC, Emily Wright <br>
+                <br>
+                Cover art:
+  
+              </p>
+            </div>
+  
+            <div class=" bg-black d-flex justify-content-start align-items-center ">
+  
+              <img class=" ms-3 border border-secondary border-2" width="250" height="150"
+                src="../images/Linkin_Park,_One_More_Light,_album_art_final.jpeg" alt="">
+            </div>
+  
+          </div>
+          <div class="modal-footer bg-dark d-flex justify-content-center">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!----------------------container modal / button / modal------------------------------------------------------------>
+  
+    <div class="container-fluid bg-dark">
+  
+  
+      <div class="row bg-dark">
+        <!---------Button modal--------->
+        <button type="button"
+          class=" fw-bold btn btn-outline-secondary btn-sm col-6 border border-bottom border-top border-0"
+          data-bs-toggle="modal" data-bs-target="#MoreInfo-Iri">
+          More info
+        </button>
+    <!---------Button modal--------->
+        <button type="button"
+          class=" fw-bold btn btn-outline-secondary  btn-sm col-6 border border-bottom border-top border-0"
+          data-bs-toggle="modal" data-bs-target="#Song-Lyrics-Iri">
+          Lyrics
+        </button>
+      </div>
+  
+  
+      <div class="row bg-black">
+  
+  
+        <div class="col-5 mt-4 ms-0 mb-4">
+          <img class="" width="514px" height="300px" src="../images/Iridescent Linkin Park.webp"
+            alt="collage de la banda">
+        </div>
+  
+        <p
+          class=" fw-bold col-3 h6 d-flex align-items-center justify-content-center text-light text-decoration-underline ">
+          Iridescent
+        </p>
+  
+  
+        <div class="d-flex col-4 justify-content-center align-items-center">
+          <button type="button"
+            class="btn btn-outline-secondary btn-sm align-items-center justify-content-center border-3 "
+            data-bs-toggle="modal" data-bs-target="#ListenNow-Iri">
+            Listen Now
+          </button>
+        </div>
+      </div>
+    
+  
+
+         <!------------------------Modal-Song------------------------------------>
+
+    <div class="modal fade" id="ListenNow-Iri" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header d-flex bg-dark text-secondary">
+          <h1 class="modal-title fs-6 fw-bold " id="#ListenNow-Iri"> Iridescent - Linkin Park</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body d-flex align-items-center justify-content-center bg-dark">
+
+          <audio controls muted 
+            src="../assets/Audio/Iridescent [Official Music Video] - Linkin Park.mp3">
+
+          </audio>
+        </div>
+
+        <div class="modal-footer d-flex justify-content-center bg-dark text-secondary  ">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
  
+  <!------------------------Modal-Lyrics----------------------------------->
+
+  <div class="modal fade" id="Song-Lyrics-Iri" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header d-flex bg-dark text-secondary">
+          <h1 class="modal-title fs-6 fw-bold " id="staticBackdropLabel"> Iridescent - Linkin Park</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body d-flex align-items-center justify-content-center bg-dark">
+          <p class="text-light">
+            When you were standing in the wake of devastation<br>
+            When you were waiting on the edge of the unknown<br>
+            And with the cataclysm raining down<br>
+            Insides crying, "Save me now"<br>
+            You were there, impossibly alone<br>
+            Do you feel cold and lost in desperation?<br>
+            You build up hope, but failure's all you've known<br>
+            Remember all the sadness and frustration<br>
+            And let it go, let it go<br>
+            And in a burst of light that blinded every angel<br>
+            As if the sky had blown the heavens into stars<br>
+            You felt the gravity of tempered grace<br>
+            Falling into empty space<br>
+            No one there to catch you in their arms<br>
+            Do you feel cold and lost in desperation?<br>
+            You build up hope, but failure's all you've known<br>
+            Remember all the sadness and frustration<br>
+            And let it go, let it go<br>
+            Do you feel cold and lost in desperation?<br>
+            You build up hope, but failure's all you've known<br>
+            Remember all the sadness and frustration<br>
+            And let it go<br>
+            Let it go<br>
+            Let it go<br>
+            Let it go<br>
+            Let it go<br>
+            Do you feel cold and lost in desperation?<br>
+            You build up hope, but failure's all you've known<br>
+            Remember all the sadness and frustration<br>
+            And let it go, let it go<br>
+          </p>
+
+        </div>
+
+        <div class="modal-footer d-flex justify-content-center bg-dark text-secondary  ">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!------------------------Modal-description----------------------------------->
+
+  <div class="modal fade" id="MoreInfo-Iri" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-light">
+          <h1 class="modal-title fs-5 fw-bold  text-secondary" id="staticBackdropLabel">Description</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-black">
+
+          <div class="d-flex align-items-center">
+            <p class="text-light">
+              Released: 28 de mayo de 2011 <br>
+              Recorded: 2008 - 2010 <br>
+              Genre: Rock electrónico , Balada <br>
+              Length: 4:05 <br>
+              Album: A Thousand Suns <br>
+              Songwriter(s): Linkin Park <br>
+              Producer(s): Rick Rubin, Mike Shinoda <br>
+              <br>
+              Cover art:
+
+            </p>
+          </div>
+
+          <div class=" bg-black d-flex justify-content-start align-items-">
+
+            <img class=" border border-secondary border-2" width="250" height="150"
+              src="../assets/Images/coverIRI.jpg" alt="">
+          </div>
+
+        </div>
+        <div class="modal-footer bg-dark d-flex justify-content-center">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+   <!-- ---------------------container Music modal-------------------------------------------------------------------->
+  
+    <div class="container-fluid bg-dark">
+      <div class="row bg-dark">
+        <!--------------Button modal-------------------------->
+        <button type="button"
+          class=" fw-bold btn btn-outline-secondary btn-sm col-6 border border-bottom border-top border-0"
+          data-bs-toggle="modal" data-bs-target="#MoreInfo-Push">
+          More info
+        </button>
+  
+        <button type="button"
+          class=" fw-bold btn btn-outline-secondary  btn-sm col-6 border border-bottom border-top border-0"
+          data-bs-toggle="modal" data-bs-target="#Song-Lyrics-Push">
+          Lyrics
+        </button>
+      </div>
+  
+
+      <div class="row bg-black">
+  
+  
+        <div class="col-5 mt-4 ms-0 mb-4">
+          <img class="" width="514px" height="300px" src="../images/artworks-000364347714-78tf0z-t500x500.jpg"
+            alt="collage de la banda">
+        </div>
+  
+        <p
+          class=" fw-bold col-3 h6 d-flex align-items-center justify-content-center text-light text-decoration-underline ">
+          Pushing me away
+        </p>
+  
+  
+        <div class="d-flex col-4 justify-content-center align-items-center">
+          <button type="button"
+            class="btn btn-outline-secondary btn-sm align-items-center justify-content-center border-3 "
+            data-bs-toggle="modal" data-bs-target="#ListenNow-Push">
+            Listen Now
+          </button>
+        </div>
+      </div>
+
+       
+       <!------------------------Modal-Song------------------------------------>
+
+    <div class="modal fade" id="ListenNow-Push" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header d-flex bg-dark text-secondary">
+          <h1 class="modal-title fs-6 fw-bold " id="staticBackdropLabel"> Pushing me away - Linkin Park</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body d-flex align-items-center justify-content-center bg-dark">
+
+          <audio controls muted class="d-flex"
+            src="../assets/Audio/Pushing Me Away - Linkin Park.mp3">
+
+          </audio>
+        </div>
+
+        <div class="modal-footer d-flex justify-content-center bg-dark text-secondary  ">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+ 
+  <!------------------------Modal-Lyrics----------------------------------->
+
+  <div class="modal fade" id="Song-Lyrics-Push" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header d-flex bg-dark text-secondary">
+          <h1 class="modal-title fs-6 fw-bold " id="staticBackdropLabel"> Pushing me away - Linkin Park</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body d-flex align-items-center justify-content-center bg-dark">
+          <p class="text-light">
+            I've lied to you <br>
+            The same way that I always do <br>
+            This is the last smile <br>
+            That I'll fake for the sake of being with you <br>
+            Everything falls apart <br>
+            Even the people who never frown eventually break down <br>
+            The sacrifice of hiding in a lie <br>
+            Everything has to end <br>
+            You'll soon find we're out of time left to watch it all unwind <br>
+            The sacrifice is never knowing <br>
+            Why I never walked away? <br>
+            Why I played myself this way? <br>
+            Now I see you're testing me, pushes me away <br>
+            Why I never walked away? <br>
+            Why I played myself this way? <br>
+            Now I see you're testing me, pushes me away <br>
+            I've tried like you <br>
+            To do everything you wanted to <br>
+            This is the last time <br>
+            I'll take the blame for the sake of being with you <br>
+            Everything falls apart <br>
+            Even the people who never frown eventually break down <br>
+            The sacrifice of hiding in a lie <br>
+            Everything has to end <br>
+            You'll soon find we're out of time left to watch it all unwind <br>
+            The sacrifice is never knowing <br>
+            Why I never walked away? <br>
+            Why I played myself this way? <br>
+            Now I see you're testing me, pushes me away <br>
+            Why I never walked away? <br>
+            Why I played myself this way? <br>
+            Now I see you're testing me, pushes me away <br>
+            The sacrifice of hiding in a lie <br>
+            (We're all out of time, this is how we find how it all unwinds) <br>
+            The sacrifice is never knowing <br>
+            Why I never walked away <br>
+            Why I played myself this way <br>
+            Now I see you're testing me, pushes me away <br>
+            Why I never walked away <br>
+            Why I played myself this way <br>
+            Now I see you're testing me, pushes me away <br>
+            Pushes me away <br>
+          </p>
+
+        </div>
+
+        <div class="modal-footer d-flex justify-content-center bg-dark text-secondary  ">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!------------------------Modal-description----------------------------------->
+
+  <div class="modal fade" id="MoreInfo-Push" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-light">
+          <h1 class="modal-title fs-5 fw-bold  text-secondary" id="staticBackdropLabel">Description</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-black">
+
+          <div class="d-flex ms-3">
+            <p class="text-light">
+
+              Released: June 7, 2001 <br>
+              Recorded: 1999 - 2000 <br>
+              Genre: 	Nu metal , Balada <br>
+              Length: 3:12 <br>
+              Album: Hybrid Theory <br>
+              Songwriter(s): Linkin Park <br>
+              Producer(s): Don Gilmore <br>
+              <br>
+              Cover art:
+
+            </p>
+          </div>
+
+          <div class=" bg-black">
+
+            <img class=" ms-3 border border-secondary border-2" width="250" height="150"
+              src="../assets/Images/pushingme.jpg" alt="">
+          </div>
+
+        </div>
+        <div class="modal-footer bg-dark d-flex justify-content-center">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+   <!-- ---------------------container Music modal-------------------------------------------------------------------->
+
+   <div class="container-fluid bg-dark">
+  
+  
+    <div class="row bg-dark">
+      <!--------------- Button modal --------------->
+      <button type="button"
+        class=" fw-bold btn btn-outline-secondary btn-sm col-6 border border-bottom border-top border-0"
+        data-bs-toggle="modal" data-bs-target="#MoreInfo-In">
+        More info
+      </button>
+
+      <button type="button"
+        class=" fw-bold btn btn-outline-secondary  btn-sm col-6 border border-bottom border-top border-0"
+        data-bs-toggle="modal" data-bs-target="#Song-Lyrics-In">
+        Lyrics
+      </button>
     </div>
 
 
-      
+    <div class="row bg-black">
 
 
-  </main>
+      <div class="col-5 mt-4 ms-0 mb-4">
+        <img class="" width="514px" height="300px" src="../assets/Images/intheend-chester.jpg "
+          alt="collage de la banda">
+      </div>
+      <p
+        class=" fw-bold col-3 h6 d-flex align-items-center justify-content-center text-light text-decoration-underline ">
+        In the end
+      </p>
+
+      <div class="d-flex col-4 justify-content-center align-items-center">
+        <button type="button"
+          class="btn btn-outline-secondary btn-sm align-items-center justify-content-center border-3 "
+          data-bs-toggle="modal" data-bs-target="#ListenNow-In">
+          Listen Now
+        </button>
+      </div>
+    </div>
+  
+      <!------------------------Modal-Song------------------------------------>
+
+    <div class="modal fade" id="ListenNow-In" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header d-flex bg-dark text-secondary">
+          <h1 class="modal-title fs-6 fw-bold " id="staticBackdropLabel"> In the end - Linkin Park</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body d-flex align-items-center justify-content-center bg-dark">
+
+          <audio controls muted class="d-flex "
+            src="../assets/Audio/In The End [Official HD Music Video] - Linkin Park.mp3">
+
+          </audio>
+        </div>
+
+        <div class="modal-footer d-flex justify-content-center bg-dark text-secondary  ">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
+ 
+  <!------------------------Modal-Lyrics----------------------------------->
+
+  <div class="modal fade" id="Song-Lyrics-In" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header d-flex bg-dark text-secondary">
+          <h1 class="modal-title fs-6 fw-bold " id="staticBackdropLabel"> In the end - Linkin Park</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body bg-dark">
+          <p class="text-light">
+            One thing I don't know why <br>
+            It doesn't even matter how hard you try <br>
+            Keep that in mind, I designed this rhyme <br>
+            To explain in due time <br>
+            All I know <br>
+            Time is a valuable thing <br>
+            Watch it fly by as the pendulum swings <br>
+            Watch it count down to the end of the day <br>
+            The clock ticks life away <br>
+            It's so unreal <br>
+            Didn't look out below <br>
+            Watch the time go right out the window <br>
+            Tryin' to hold on, did-didn't even know <br>
+            I wasted it all just to watch you go <br>
+            I kept everything inside and even though I tried <br>
+            It all fell apart <br>
+            What it meant to me will eventually <br>
+            Be a memory of a time when I tried so hard <br>
+            I tried so hard and got so far <br>
+            But in the end it doesn't even matter <br>
+            I had to fall to lose it all <br>
+            But in the end it doesn't even matter <br>
+            One thing, I don't know why <br>
+            It doesn't even matter how hard you try <br>
+            Keep that in mind, I designed this rhyme <br>
+            To remind myself how I tried so hard <br>
+            In spite of the way you were mockin' me <br>
+            Acting like I was part of your property <br>
+            Remembering all the times you fought with me <br>
+            I'm surprised it got so far <br>
+            Things aren't the way they were before <br>
+            You wouldn't even recognize me anymore <br>
+            Not that you knew me back then <br>
+            But it all comes back to me in the end <br>
+            You kept everything inside and even though I tried <br>
+            It all fell apart <br>
+            What it meant to me will eventually <br>
+            Be a memory of a time when I tried so hard <br>
+            I tried so hard and got so far <br>
+            But in the end it doesn't even matter <br>
+            I had to fall to lose it all <br>
+            But in the end it doesn't even matter <br>
+            I've put my trust in you <br>
+            Pushed as far as I can go <br>
+            For all this <br>
+            There's only one thing you should know <br>
+            I've put my trust in you <br>
+            Pushed as far as I can go <br>
+            For all this <br>
+            There's only one thing you should know <br>
+            I tried so hard and got so far <br>
+            But in the end it doesn't even matter <br>
+            I had to fall to lose it all <br>
+            But in the end it doesn't even matter <br>
+          </p>
+
+        </div>
+
+        <div class="modal-footer d-flex justify-content-center bg-dark text-secondary  ">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!------------------------Modal-description----------------------------------->
+
+  <div class="modal fade" id="MoreInfo-In" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-light">
+          <h1 class="modal-title fs-5 fw-bold  text-secondary" id="staticBackdropLabel">Description</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-black">
+
+          <div>
+            <p class="text-light">
+              Released: October 9, 2001 <br>
+              Recorded: 2000 <br>
+              Genre: Nu metal <br>
+              Length: 3:38 <br>
+              Album: Hybrid Theory <br>
+              Songwriter(s): Chester Bennington, Mike Shinoda<br>
+              Producer(s): Don Gilmore <br>
+              <br>
+              Cover art:
+
+            </p>
+          </div>
+
+          <div class=" bg-black">
+
+            <img class=" ms-1 border border-secondary border-2" width="250" height="150"
+              src="../assets/Images/inthend.jpg" alt="">
+          </div>
+
+        </div>
+        <div class="modal-footer bg-dark d-flex justify-content-center">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+  <!-- ---------------------container Music modal-------------------------------------------------------------------->
+
+    <div class="container-fluid bg-dark">
+  
+      <div class="row bg-dark">
+        <!----------- Button-modal ------------------------------>
+        <button type="button"
+          class=" fw-bold btn btn-outline-secondary btn-sm col-6 border border-bottom border-top border-0"
+          data-bs-toggle="modal" data-bs-target="#MoreInfo-Paper">
+          More info
+        </button>
+  
+        <button type="button"
+          class=" fw-bold btn btn-outline-secondary  btn-sm col-6 border border-bottom border-top border-0"
+          data-bs-toggle="modal" data-bs-target="#Song-Lyrics-Paper">
+          Lyrics
+        </button>
+      </div>
+  
+  
+  
+      <div class="row bg-black">
+  
+
+        <div class="col-5 mt-4 ms-0 mb-4">
+          <img class="" width="514px" height="300px" src="../assets/Images/papercut-LP.jpg"
+            alt="collage de la banda">
+        </div>
+  
+        <p
+          class=" fw-bold col-3 h6 d-flex align-items-center justify-content-center text-light text-decoration-underline ">
+          Papercut
+        </p>
+  
+  
+        <div class="d-flex col-4 justify-content-center align-items-center">
+          <button type="button"
+            class="btn btn-outline-secondary btn-sm align-items-center justify-content-center border-3 "
+            data-bs-toggle="modal" data-bs-target="#ListenNow-Paper">
+            Listen Now
+          </button>
+        </div>
+      </div>
+
+
+     <!------------------------Modal-Song------------------------------------>
+
+    <div class="modal fade" id="ListenNow-Paper" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header d-flex bg-dark text-secondary">
+          <h1 class="modal-title fs-6 fw-bold " id="staticBackdropLabel"> Papercut - Linkin Park</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body d-flex align-items-center justify-content-center bg-dark">
+
+          <audio controls muted class="d-flex "
+            src="../assets/Audio/Papercut [Official HD Music Video] - Linkin Park.mp3">
+
+          </audio>
+        </div>
+
+        <div class="modal-footer d-flex justify-content-center bg-dark text-secondary  ">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+ 
+  <!------------------------Modal-Lyrics----------------------------------->
+
+  <div class="modal fade" id="Song-Lyrics-Paper" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header d-flex bg-dark text-secondary">
+          <h1 class="modal-title fs-6 fw-bold " id="staticBackdropLabel"> Papercut - Linkin Park</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body bg-dark">
+          <p class="text-light">
+           
+            Why does it feel like night today? <br>
+            Somethin' in here's not right today <br>
+            Why am I so uptight today? <br>
+            Paranoia's all I got left <br>
+            I don't know what stressed me first <br>
+            Or how the pressure was fed <br>
+            But I know just what it feels like <br>
+            To have a voice in the back of my head <br>
+            Like a face that I hold inside <br>
+            A face that awakes when I close my eyes <br>
+            A face watches every time I lie <br>
+            A face that laughs every time I fall <br>
+            (And watches everything) <br>
+            So I know that when it's time to sink or swim <br>
+            That the face inside is here in me <br>
+            Right underneath my skin <br>
+            It's like I'm paranoid lookin' over my back <br>
+            It's like a whirlwind inside of my head <br>
+            It's like I can't stop what I'm hearing within <br>
+            It's like the face inside is right beneath my skin <br>
+            I know I've got a face in me <br>
+            Points out all my mistakes to me <br>
+            You've got a face on the inside too <br>
+            And your paranoia's probably worse <br>
+            I don't know what set me off first <br>
+            But I know what I can't stand <br>
+            Everybody acts like the fact of the matter is <br>
+            I can't add up to what you can <br>
+            But everybody has a face that they hold inside <br>
+            A face that awakes when I close my eyes <br>
+            A face watches every time they lie <br>
+            A face that laughs every time they fall <br>
+            (And watches everything) <br>
+            So you know that when it's time to sink or swim <br>
+            That the face inside is watchin' you too <br>
+            Right inside your skin <br>
+            It's like I'm paranoid lookin' over my back <br>
+            It's like a whirlwind inside of my head <br>
+            It's like I can't stop what I'm hearing within <br>
+            It's like the face inside is right beneath the skin <br>
+            It's like I'm paranoid lookin' over my back <br>
+            It's like a whirlwind inside of my head <br>
+            It's like I can't stop what I'm hearing within <br>
+            It's like the face inside is right beneath my skin <br>
+            The face inside is right beneath your skin <br>
+            The face inside is right beneath your skin <br>
+            The face inside is right beneath your skin <br>
+            The sun goes down <br>
+            I feel the light betray me <br>
+            The sun goes down <br>
+            I feel the light betray me <br>
+            It's like I'm paranoid lookin' over my back <br>
+            It's like a whirlwind inside of my head <br>
+            It's like I can't stop what I'm hearing within <br>
+            It's like the face inside is right beneath the skin <br>
+            It's like I'm paranoid lookin' over my back <br>
+            It's like a whirlwind inside of my head <br>
+            It's like I can't stop what I'm hearing within <br>
+            It's like I can't stop what I'm hearing within <br>
+            It's like I can't stop what I'm hearing within <br>
+            It's like the face inside is right beneath my skin <br>   
+
+        </div>
+
+        <div class="modal-footer d-flex justify-content-center bg-dark text-secondary  ">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!------------------------Modal-description----------------------------------->
+
+  <div class="modal fade" id="MoreInfo-Paper" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-light">
+          <h1 class="modal-title fs-5 fw-bold  text-secondary" id="staticBackdropLabel">Description</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-black">
+
+          <div>
+            <p class="text-light">
+              Released: june 18, 2001 <br>
+              Recorded: 2000 <br>
+              Genre: Nu metal, Rap metal <br>
+              Length: 3:12 <br>
+              Album: Hybrid Theory <br>
+              Songwriter(s): Chester Bennington, Mike Shinoda<br>
+              Producer(s): Don Gilmore <br>
+              <br>
+              Cover art:
+
+            </p>
+          </div>
+
+          <div class=" bg-black">
+
+            <img class=" ms-1 border border-secondary border-2" width="250" height="150"
+              src="../assets/Images/Linkin_Park_-_Papercut_CD_cover.jpg" alt="">
+          </div>
+
+        </div>
+        <div class="modal-footer bg-dark d-flex justify-content-center">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+</main>
+  
+  
+  
   <!-- ----------------------------BARRA PLACEHOLDER---------------------------------------------------- -->
-  <p class="placeholder-wave  bg-black mb-0">
+  <p class="placeholder-wave bg-black mb-0">
     <span class="placeholder placeholder-xs col-12"></span>
   </p>
   <!-- ----------------------------BARRA PLACEHOLDER---------------------------------------------------- -->
-
-
+  
+  
   <!-- ----------------------------------FOOTER--------------------------------------------------------- -->
-
-  <footer class="pie-pagina bg-black">
+  
+  <footer class="pie-pagina bg-black ">
     <div class=" grupo-1 d-flex h-100">
-
+  
       <div class="box col-2 d-flex justify-content-center ">
         <figure>
           <a href="#">
@@ -110,18 +1004,18 @@
           </a>
         </figure>
       </div>
-
+  
       <div class="col-6 justify-content-center">
         <p id="texto-frase" class="h6 mt-0 fw-bold ms-5 d-flex justify-content-center">"When you’re feeling empty, keep
           me in your memory,
           <br> and leave out all the rest"
         </p>
-
+  
       </div>
-
+  
       <div class="box col-4 text-light ms-0 mt-0">
         <h6 class="fw-bold mt-0 mb-0">FOLLOW US ON SOCIAL MEDIA</h6>
-
+  
         <div class="red-social mt-0">
           <a href="https://www.facebook.com/linkinpark" class="fa fa-facebook"></a>
           <a href="https://www.instagram.com/linkinpark/" class="fa fa-instagram"></a>
@@ -130,34 +1024,32 @@
         </div>
       </div>
     </div>
-
-
+  
+  
     <section class="row">
-
+  
       <div class=" col bg-black d-flex h-100 align-items-center justify-content-center text-light">
         <p class="h6 fw-semibold ms-0 me-5"> © 2022 Linkin Park. All Rights Reserved</p>
       </div>
     </section>
-
+  
     <!-- ----------------------------BARRA PLACEHOLDER---------------------------------------------------- -->
-    <p class="placeholder-wave bg-black ">
+    <p class="placeholder-wave bg-black">
       <span class="placeholder placeholder-xs col-12"></span>
     </p>
     <!-- ----------------------------BARRA PLACEHOLDER---------------------------------------------------- -->
-
+  
   </footer>
-
-
-
-
-
+  
+  
+  
+  
+  
   <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  
+  
+  </body>
 
-
-</body>
-
-
-</html>
+  </html>
