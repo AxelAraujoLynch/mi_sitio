@@ -3,6 +3,7 @@
 @import "./footer";
 @import "./header";
 @import "./Music-Main";
+@import "./Merch-Main";
 
 * {
   margin: 0;
@@ -32,12 +33,5 @@ body {
       border-color: $color-especial !important;
     }
   }
-
-  .navbar-expand-lg .navbar-collapse {
-    display: flex !important;
-    flex-direction: row-reverse !important;
-  }
-
-
 
 }
