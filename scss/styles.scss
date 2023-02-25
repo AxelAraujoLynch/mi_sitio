@@ -4,6 +4,8 @@
 @import "./header";
 @import "./Music-Main";
 @import "./Merch-Main";
+@import "./Videos-Main";
+
 
 * {
   margin: 0;
@@ -25,7 +27,6 @@ body {
   main {
     height: 155vh;
     #carouselslide {
-      display: flex;
       width: 100vw;
     }
 
@@ -35,3 +36,4 @@ body {
   }
 
 }
+
