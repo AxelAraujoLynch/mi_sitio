@@ -1,6 +1,5 @@
 @import "./_variables";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-@import "./footer";
 @import "./header";
 @import "./Music-Main";
 @import "./Merch-Main";
@@ -18,6 +17,7 @@
 body {
   height: 200vh;
   overflow-x: hidden;
+  margin: 0px;
 
   button {
     border-radius: 0% !important;
@@ -25,6 +25,7 @@ body {
 
 
   main {
+    
     height: 155vh;
     #carouselslide {
       width: 100vw;
@@ -37,3 +38,17 @@ body {
 
 }
 
+#red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: rgb(255, 255, 255) !important;
+  margin-right: 10px;
+  text-align: center;
+  transition: all 300ms ease;
+}
+#red-social a a:hover {
+  color: rgb(252, 252, 252);
+}

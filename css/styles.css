@@ -46,16 +46,32 @@ header nav a {
   color: white !important;
 }
 
-#Main-Music {
-  height: 230vh !important;
-}
-
 #mainMerch {
   height: 220vh !important;
 }
 
-#mainVideos {
-  height: 199vh !important;
+#video-container-1 {
+  background-color: rgb(67, 64, 54) !important;
+}
+
+#video-container-2 {
+  background-color: rgb(67, 64, 54) !important;
+}
+
+#video-container-3 {
+  background-color: rgb(67, 64, 54) !important;
+}
+
+#video-container-4 {
+  background-color: rgb(67, 64, 54) !important;
+}
+
+#video-container-5 {
+  background-color: rgb(67, 64, 54) !important;
+}
+
+#video-container-6 {
+  background-color: rgb(67, 64, 54) !important;
 }
 
 * {
@@ -68,6 +84,7 @@ header nav a {
 body {
   height: 200vh;
   overflow-x: hidden;
+  margin: 0px;
 }
 body button {
   border-radius: 0% !important;
@@ -80,7 +97,7 @@ body main #carouselslide {
 }
 body main #carouselExampleCaptions {
   border-color: rgb(129, 131, 126) !important;
-}/*# sourceMappingURL=styles.css.map */
+}
 
 #red-social a {
   display: inline-block;
@@ -93,6 +110,7 @@ body main #carouselExampleCaptions {
   text-align: center;
   transition: all 300ms ease;
 }
+
 #red-social a a:hover {
   color: rgb(252, 252, 252);
-}
+}/*# sourceMappingURL=styles.css.map */
