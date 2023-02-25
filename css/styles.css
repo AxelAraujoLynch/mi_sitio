@@ -46,32 +46,36 @@ header nav a {
   color: white !important;
 }
 
+#lyr-info {
+  background-color: rgb(35, 31, 50) !important;
+}
+
 #mainMerch {
   height: 220vh !important;
 }
 
 #video-container-1 {
-  background-color: rgb(67, 64, 54) !important;
+  background-color: rgb(35, 31, 50) !important;
 }
 
 #video-container-2 {
-  background-color: rgb(67, 64, 54) !important;
+  background-color: rgb(35, 31, 50) !important;
 }
 
 #video-container-3 {
-  background-color: rgb(67, 64, 54) !important;
+  background-color: rgb(35, 31, 50) !important;
 }
 
 #video-container-4 {
-  background-color: rgb(67, 64, 54) !important;
+  background-color: rgb(35, 31, 50) !important;
 }
 
 #video-container-5 {
-  background-color: rgb(67, 64, 54) !important;
+  background-color: rgb(35, 31, 50) !important;
 }
 
 #video-container-6 {
-  background-color: rgb(67, 64, 54) !important;
+  background-color: rgb(35, 31, 50) !important;
 }
 
 * {
@@ -113,4 +117,10 @@ body main #carouselExampleCaptions {
 
 #red-social a a:hover {
   color: rgb(252, 252, 252);
+}
+
+#contacto-capa {
+  min-height: 100vh;
+  background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url(../assets/Images/linkinpark-contacto.webp) no-repeat center center fixed;
+  background-size: cover;
 }/*# sourceMappingURL=styles.css.map */
