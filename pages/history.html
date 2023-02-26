@@ -59,9 +59,9 @@
 
 
     <div class="btn-group border-radius d-flex" role="group">
-      <button type="button" class="btn btn-dark fw-bold col-6" data-bs-toggle="modal" aria-label="Basic example"
+      <button type="button" class="btn btn-dark fw-bold col-6" id="lyr-info" data-bs-toggle="modal" aria-label="Basic example"
         data-bs-target="#staticBackdrop">Biography</button>
-      <button type="button" class="btn btn-dark fw-bold col-6 " data-bs-toggle="modal" aria-label="Basic example"
+      <button type="button" class="btn btn-dark fw-bold col-6" id="lyr-info" data-bs-toggle="modal" aria-label="Basic example"
         data-bs-target="#staticBackdrop2">Band members</button>
     </div>
 
@@ -70,11 +70,11 @@
       aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
-          <div class="modal-header bg-dark">
+          <div class="modal-header" id="lyr-info">
             <h1 class="modal-title fs-5 text-light fw-bold" id="staticBackdropLabel">History</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-close"  id="lyr-info" data-bs-dismiss="modal"  aria-label="Close"></button>
           </div>
-          <div class="modal-body bg-black text-light">
+          <div class="modal-body text-black">
 
             <p class="ms-1"> HISTORY <br> Linkin Park was founded by three high school friends: Mike Shinoda, Rob
               Bourdon, and Brad Delson. The three attended Agoura High School in Agoura Hills, California, a suburb of
@@ -140,8 +140,8 @@
 
             </p>
           </div>
-          <div class="modal-footer bg-dark justify-content-center fw-bold">
-            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+          <div class="modal-footer bg-dark justify-content-center fw-bold" id="lyr-info">
+            <button type="button" class="btn btn-outline-secondary"  data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -152,21 +152,21 @@
     <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
       aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content bg-black">
-          <div class="modal-header bg-dark">
+        <div class="modal-content">
+          <div class="modal-header" id="lyr-info">
             <h1 class="modal-title fs-5 text-light fw-bold" id="staticBackdropLabel">Band members</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body column">
 
-            <div class=" d-flex align-items-center justify-content-start border border-secondary border-2 text-light ">
+            <div class=" d-flex align-items-center justify-content-start border border-secondary border-2 text-black ">
               <img width="99" height="150" src="../assets/Images/mike.jpg" alt="Mike Shinoda">
               <p class="ms-2">Michael Kenji Shinoda, (born February 11, 1977) is an American musician, singer, rapper,
                 songwriter and record producer. He co-founded the rock band Linkin Park in 1996.
               </p>
             </div>
 
-            <div class=" d-flex align-items-center justify-content-start border border-secondary border-2 text-light">
+            <div class=" d-flex align-items-center justify-content-start border border-secondary border-2 black">
               <img width="99" height="150" src="../assets/Images/chester.jpg" alt="Chester Bennington">
               <p class="ms-2">Chester Charles Bennington (March 20, 1976 – July 20, 2017) was an American singer and
                 songwriter
@@ -174,13 +174,13 @@
               </p>
             </div>
 
-            <div class=" d-flex align-items-center justify-content-start border border-secondary border-2 text-light ">
+            <div class=" d-flex align-items-center justify-content-start border border-secondary border-2 text-black ">
               <img width="99" height="150" src="../assets/Images/brad.jpg" alt="Brad Delson">
               <p class="ms-2">Bradford Phillip Delson (born December 1, 1977) is an American musician,
                 best known as the lead guitarist and one of the founding members of the rock band Linkin Park</p>
             </div>
 
-            <div class=" d-flex align-items-center justify-content-start border border-secondary border-2 text-light">
+            <div class=" d-flex align-items-center justify-content-start border border-secondary border-2 text-black">
               <img width="99" height="150" src="../assets/Images/Dave_Farrell.JPG" alt="Dave Farrell">
               <p class="ms-2">David Michael Farrell, also known by his stage name Phoenix (born February 8, 1977), is an
                 American musician,
@@ -188,13 +188,13 @@
                 He was also a member of Tasty Snax, a pop punk band.</p>
             </div>
 
-            <div class=" d-flex align-items-center justify-content-start border border-secondary border-2 text-light">
+            <div class=" d-flex align-items-center justify-content-start border border-secondary border-2 black">
               <img width="99" height="150" src="../assets/Images/joe.jpg" alt="Joe Hahn">
               <p class="ms-2">Joseph Hahn (born March 15, 1977) is an American musician, DJ, director and visual artist
                 best known as the DJ of the American rock band Linkin Park.</p>
             </div>
 
-            <div class=" d-flex align-items-center justify-content-start border border-secondary border-2 text-light">
+            <div class=" d-flex align-items-center justify-content-start border border-secondary border-2 text-black">
               <img width="99" height="150" src="../assets/Images/rob.jpg" alt="Rob Bourdon">
               <p class="ms-2">Robert Gregory Bourdon (born January 20, 1979) is an American musician,
                 best known as the drummer and co-founding member of the American rock band Linkin Park.</p>
@@ -203,8 +203,8 @@
             <!---------------------------------------------------modal Footer------------------------------------- -->
 
           </div>
-          <div class="modal-footer bg-dark justify-content-center">
-            <button type="button" class="btn btn-outline-secondary fw-bold" data-bs-dismiss="modal">Close</button>
+          <div class="modal-footer bg-dark justify-content-center" id="lyr-info">
+            <button type="button" class="btn btn-outline-secondary fw-bold" id="lyr-info" data-bs-dismiss="modal">Close</button>
 
           </div>
         </div>
@@ -215,7 +215,7 @@
 
     <div class="container-fluid">
       <div
-        class=" row bg-dark col align-items-center justify-content-center border border-secondary  border-2s ms-5 mt-5 me-5 p-5 ms-0">
+        class=" row bg-dark col align-items-center justify-content-center border border-secondary  border-2s ms-5 mt-5 me-5 p-5 ms-0" id="lyr-info">
         <p class=" d-flex align-items-center justify-content-center col mb-5 text-light fw-bold h6">
           LA DURA VIDA DE CHESTER BENNINGTON</p>
         <iframe class="w-100" height="450" src="https://www.youtube.com/embed/Zgq--ms-QT4" title="YouTube video player"
@@ -227,7 +227,7 @@
 
     <div class="container-fluid">
       <div
-        class=" row bg-dark col align-items-center justify-content-center border border-secondary  border-2s ms-5 mt-5 me-5 p-5 ms-0">
+        class=" row bg-dark col align-items-center justify-content-center border border-secondary  border-2s ms-5 mt-5 me-5 p-5 ms-0" id="lyr-info">
         <p class=" d-flex align-items-center justify-content-center col mb-5 text-light fw-bold h6">
           LINKIN PARK BIOGRAFIA COMPLETA</p>
         <iframe class="w-100" height="450" src="https://www.youtube.com/embed/_M0Ubcc9okE" title="YouTube video player"
